@@ -15,3 +15,15 @@ Weakness(es):
   - artistically challenged (I cannot match colors/styles, 
     usually overkill...which is why my wardrobe consists 
     of 80% black leggings...)
+    
+---Consuelo Huerta---
+
+Strength(s):
+  - hard-worker
+  - easy to communicate 
+  - group player
+  
+ Weakness :
+  - not good with javascript but will work hard to figure it out
+  - I am also easily distracted
+  
