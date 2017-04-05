@@ -1,0 +1,13 @@
+html {
+  border: 2px black solid;
+  height: 95vh;
+  width: 100vw;
+}
+#page_struct {
+  list-style: none;
+  margin: 0;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+}
