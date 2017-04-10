@@ -1,21 +1,32 @@
-<!doctype HTML>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title> Illinois Institute of Technology Web Portal </title>
-  <link rel="stylesheet" href="css/screen.css">
+  <title>MyIIT Login</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-  <ul id="page_struct">
-    <li id="header">{HEADER}</li>
-    <li id="main">
-      <ul id="login_form">
-        <form name="login_page" onsubmit="return(validate());">
-          <li><input type="text" name="userid" placeholder="USERNAME" /></li>
-          <li><input type="text" name="password" placeholder="PASSWORD" /></li>
-        </form>
-      </ul>
-    </li>
-    <li id="footer"> {FOOTER} </li>
-  </ul>
+   <form id="myiitlogin" method="get" action="null">
+    <ul>
+      <li>
+        <label for="user">E-mail</label>
+        <input type="text" name="user" id="user" placeholder="Username" />
+      </li>  
+      <li>  
+        <label for="pass">Name</label>
+        <input type="text" name="pass" id="pass" placeholder="Password" />
+      </li>  
+      <li>  
+        <input type="submit" name="submit" id="submit" value="Submit" onclick="formSubmit()" />
+      </li>
+    </ul>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/site.js"></script>
+  <footer>
+    Copyright Illinois Institute of Technology 2017
+  </footer>
 </body>
 </html>
