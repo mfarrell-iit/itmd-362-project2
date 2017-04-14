@@ -24,8 +24,17 @@ html {
 
 body {
   padding: 1em, 1em;
+  margin: 0em 5em;
+  background-color: red;
 }
 
+#footer {
+  background-color: blue;
+  border: black 5px solid;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+}
 
 img {
   max-width: 75%;
@@ -35,7 +44,11 @@ ul {
   padding: 2em, 1em;
   width: 100%;
 }
-
+#page_struct{
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
 li {
   padding: .5em;
 }
@@ -47,7 +60,12 @@ div {
   width: 100%;
 }
 
-footer {
+label {
+  display: inline-block;
+  color: white;
+  font-weight: bolder;
+}
+#footer {
   padding; 2em;
 }
 
@@ -68,7 +86,7 @@ footer {
   }
 }
 
-  footer {
+  #footer {
     padding: .5em;
   }
 
@@ -80,7 +98,7 @@ footer {
     font-size: 2em;
   }
 
-  footer {
+  #footer {
     padding: 1em;
   }
 }
@@ -98,9 +116,6 @@ input {
   padding: .5em;
 }
 
-label {
-  display: block;
-}
 
 #email, #name, #zipcode, #submit{
   margin: 1em;
@@ -109,30 +124,13 @@ label {
 }
 @media screen and (min-width: 800px) {
   body {
-    background-color: red;
     margin: 0em 5em;
-  }
+    }
   h1 {
     font-size: 5em;
-  }
+    }
   label {
-    display: inline-block;
-    color: white;
-    font-weight: bolder;
     font-size: 1.3em;
-  }
-  .button {
-    padding: .5em;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    text-align: center;
-    background-color: red;
-    color: white;
-  }
-
-  .button:hover {
-    transition-duration: 0.4s;
-    background-color: #FFFFFF; /* Green */
-    color: red;
-  }
+    }
   }
 }
