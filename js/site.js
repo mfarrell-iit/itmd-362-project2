@@ -1,5 +1,5 @@
 var user = {
-  firstName: "JUSTIN",
+  firstName: "Justin",
   lastName: "BIEBER",
   username: "JBIEBER",
   password: "hawk2017"
@@ -17,7 +17,6 @@ function login(){
   } else if (input_user != user.username || input_pw != user.password) {
     window.alert("You've entered an incorrect login. Please check your credentials.");
   } else if (input_user == user.username && input_pw == user.password){
-    window.alert("ypppp");
     window.location.replace('main.html');
   }
 }
