@@ -40,6 +40,9 @@ body {
 #body > p {
   text-align: justify;
 }
+#detailed-list {
+  display: none;
+}
 #footer {
   margin: 0;
   padding: .23em;
@@ -115,6 +118,17 @@ cursor: default;
   background-color: white;
   cursor: pointer;
 }
+input[type='number'] {
+    -moz-appearance:textfield;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input {
+}
 #footer span {
   display: block;
 }
@@ -126,7 +140,10 @@ h2 > button {
 h2 > button:hover {
   cursor: pointer;
 }
-
+#pay_box {
+  display: none;
+  padding: .3em;
+}
 /* ---Media States---*/
 
 /* phone */
@@ -167,7 +184,7 @@ h2 > button:hover {
   #navi_bar > .option {
     display: none;
   }
-  #fin_aid_info *, #print_det * {
+  #fin_aid_info *, #print_det  {
     display: none;
   }
   #body h2 {

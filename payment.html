@@ -45,11 +45,18 @@
         </li>
         <li id="acc_bal">
           <h2> <button id="tuiton_exp">+</button> Tuition Details </h2>
-          <li id="amt_due">Outstanding Balance: </li>
-          <li> <button id="p_now">Pay now </button>
+          <li id="amt_due">Outstanding Balance: <span id="tut-amt"></span></li>
+          <li>
+            <ul id="detailed-list">
+            </ul>
+          </li>
+          <li>
             <section id="pay_box">
-              ladaee deaa
+              <input type='number' step='1' min='0' placeholder="Routing Number"> </input>
+              <input type='number' step='1' min='0' placeholder="Account Number"> </input>
+              <input type='number' step='1' min='0' placeholder="Amount to Pay"> </input>
             </section>
+            <button id="p_now">Pay now </button>
           </li>
         </li>
         <li id="print">
