@@ -48,13 +48,16 @@
           <li id="amt_due">Outstanding Balance: <span id="tut-amt"></span></li>
           <li>
             <ul id="detailed-list">
+              <li>
+                <img src="./media/tuition.png" alt='tuition breakdown'/>
+              </li>
             </ul>
           </li>
           <li>
             <section id="pay_box">
-              <input type='number' step='1' min='0' placeholder="Routing Number"> </input>
-              <input type='number' step='1' min='0' placeholder="Account Number"> </input>
-              <input type='number' step='1' min='0' placeholder="Amount to Pay"> </input>
+              <input id='r_num' type='number' step='1' min='0' placeholder="Routing Number"> </input>
+              <input id='acc_num'type='number' step='1' min='0' placeholder="Account Number"> </input>
+              <input id='amt' type='number' step='1' min='0' placeholder="Amount to Pay"> </input>
             </section>
             <button id="p_now">Pay now </button>
           </li>
