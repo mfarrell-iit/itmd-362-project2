@@ -16,7 +16,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ---Site Styles--- */
 
 html {
-  background-color: red;
+  background-color: #CC0000;
   font-family: sans-serif, serif;
   padding: 1em, .75em;
   text-align: center
@@ -27,6 +27,7 @@ html {
 }
 #body{
   background-color: white;
+  width:100%;
 }
 #header {
   border-bottom: #cc0000 solid .23em;
@@ -95,11 +96,11 @@ label {
 }
 .option:hover {
   color: white;
-  background-color: red;
+  background-color: #CC0000;
 
 }
 .active {
-  color: red;
+  color: #CC0000;
 }
 .active {
 cursor: default;
@@ -117,6 +118,15 @@ cursor: default;
 #footer span {
   display: block;
 }
+h2 > button {
+  background-color: white;
+  color: #CC0000;
+  border: #CC0000 .01em solid;
+}
+h2 > button:hover {
+  cursor: pointer;
+}
+
 /* ---Media States---*/
 
 /* phone */
@@ -135,11 +145,7 @@ cursor: default;
   label {
     display: none;
   }
-  ul {
-    padding: .5em;
-  }
-
-  li {
+  ul, li {
     padding: .5em;
   }
   #footer {
@@ -158,8 +164,17 @@ cursor: default;
   #navi_bar {
     padding: .35em 0;
   }
-  #navi_bar > .option{
+  #navi_bar > .option {
     display: none;
+  }
+  #fin_aid_info *, #print_det * {
+    display: none;
+  }
+  #body h2 {
+    padding: .25em;
+  }
+  #info > h2:hover {
+    cursor: pointer;
   }
 
 }
