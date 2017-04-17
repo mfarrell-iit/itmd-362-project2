@@ -16,7 +16,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ---Site Styles--- */
 
 html {
-  background-color: #FFFFFF;
+  background-color: red;
   font-family: sans-serif, serif;
   padding: 1em, .75em;
   text-align: center
@@ -32,21 +32,21 @@ html {
   background-color: white;
 }
 #header {
-  min-height: 20vh;;
   border-bottom: #cc0000 solid .23em;
   line-height: 5em;
 }
 body {
   padding: 1em, 1em;
   margin: 0em;
-  background-color: red;
 }
-
+#body {
+  background-color:white;
+}
+#body > p {
+  text-align: justify;
+}
 #footer {
-  vertical-align: middle;
-  text-align: center;
   margin: 0;
-  min-height: 20vh;
   border-top: #cc0000 solid .23em;
 }
 
@@ -91,6 +91,9 @@ label {
 .active {
   color: red;
 }
+.active {
+cursor: default;
+}
 #navi_bar {
   width:100%;
   margin: 0;
@@ -99,6 +102,7 @@ label {
   border-top: .01em solid black;
   border-bottom: .01em solid black;
   background-color: white;
+  cursor: pointer;
 }
 #footer span {
   display: block;
@@ -106,11 +110,21 @@ label {
 /* ---Media States---*/
 
 /* phone */
-@media screen and (min-width: 23.438em) {
+@media screen and (min-width: 320px) {
   html {
     font-size: 1em;
+    line-height: 1em;
   }
-
+  html h1 {
+    padding-top: .25em;
+    line-height: .95em;
+  }
+  label, input {
+    font-size: 1.15em;
+  }
+  label {
+    display: none;
+  }
   ul {
     padding: .5em;
   }
@@ -118,25 +132,39 @@ label {
   li {
     padding: .5em;
   }
-}
-
   #footer {
     padding: .5em;
+    color: white;
+  }
+  #footer a img {
+    display: inline;
+    width: 35%;
+    padding: 1.5em;
+  }
+  #footer p {
+    display: inline;
+    padding: 1.5em 0;
+  }
+  #navi_bar {
+    padding: .35em 0;
+  }
+  #navi_bar > .option{
+    display:none;
   }
 
 }
 
 /* tablet */
-@media screen and (min-width: 48em) {
+/*@media screen and (min-width: 320px) {
   html {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   #footer {
     padding: 1em;
   }
 }
-
+*/
 /* ---Input Styling--- */
 
 form {
