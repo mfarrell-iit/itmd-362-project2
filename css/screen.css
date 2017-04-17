@@ -1,6 +1,7 @@
 
 /*
 Michael Farrell
+Ariel Young
 ITMD 362 - Project 2
 Professor Stolley
 
@@ -15,17 +16,38 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ---Site Styles--- */
 
 html {
-  background-color: #d32828;
+  background-color: #FFFFFF;
   font-family: sans-serif, serif;
   padding: 1em, .75em;
+  text-align: center
 }
-
+#page_struct{
+  margin: 0;
+  padding: 0;
+  height:100%;
+  min-height: 100vh;
+}
+#body{
+  min-height:60%;
+  background-color: white;
+}
+#header {
+  min-height: 20vh;;
+  border-bottom: #cc0000 solid .23em;
+  line-height: 5em;
+}
 body {
   padding: 1em, 1em;
+  margin: 0em;
+  background-color: red;
 }
 
-h1 {
+#footer {
+  vertical-align: middle;
   text-align: center;
+  margin: 0;
+  min-height: 20vh;
+  border-top: #cc0000 solid .23em;
 }
 
 img {
@@ -34,27 +56,53 @@ img {
 
 ul {
   padding: 2em, 1em;
-  text-align: center;
   width: 100%;
 }
+h1 {
+  font-size: 2.7em;
+  color: white;
 
+}
 li {
   padding: .5em;
 }
 
 div {
-  text-align: center;
   padding: 1em;
   font-size: 1.25em;
   display: block;
   width: 100%;
 }
 
-footer {
-  text-align: center;
-  padding; 2em;
+label {
+  display: inline-block;
+  color: #262626;
+  font-weight: bolder;
 }
+#navi_bar li {
+  display: inline-block;
+  padding: 0em 1.3em;
+}
+.option:hover {
+  color: white;
+  background-color: red;
 
+}
+.active {
+  color: red;
+}
+#navi_bar {
+  width:100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  border-top: .01em solid black;
+  border-bottom: .01em solid black;
+  background-color: white;
+}
+#footer span {
+  display: block;
+}
 /* ---Media States---*/
 
 /* phone */
@@ -62,20 +110,20 @@ footer {
   html {
     font-size: 1em;
   }
-  
+
   ul {
     padding: .5em;
   }
-  
+
   li {
     padding: .5em;
   }
 }
-  
-  footer {
+
+  #footer {
     padding: .5em;
   }
-  
+
 }
 
 /* tablet */
@@ -83,8 +131,8 @@ footer {
   html {
     font-size: 2em;
   }
-  
-  footer {
+
+  #footer {
     padding: 1em;
   }
 }
@@ -102,13 +150,21 @@ input {
   padding: .5em;
 }
 
-label {
-  display: block;  
-}
 
 #email, #name, #zipcode, #submit{
   margin: 1em;
   border: solid;
   text-align: left;
 }
-
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0em 5em;
+    }
+  h1 {
+    font-size: 5em;
+    }
+  label {
+    font-size: 1.3em;
+    }
+  }
+}
