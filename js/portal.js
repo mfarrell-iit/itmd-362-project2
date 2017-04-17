@@ -12,6 +12,9 @@ function load_login() {
   $("#finances").bind('click', function() {
     window.location.replace('payment.html');
   });
+  $("#home").bind('click', function() {
+    window.location.replace('main.html');
+  });
 
   $('#exp').bind('click',  function() {
     var change;

@@ -24,11 +24,8 @@ html {
 #page_struct{
   margin: 0;
   padding: 0;
-  height:100%;
-  min-height: 100vh;
 }
 #body{
-  min-height:60%;
   background-color: white;
 }
 #header {
@@ -39,15 +36,22 @@ body {
   padding: 1em, 1em;
   margin: 0em;
 }
-#body {
-  background-color:white;
-}
 #body > p {
   text-align: justify;
 }
 #footer {
   margin: 0;
+  padding: .23em;
   border-top: #cc0000 solid .23em;
+}
+#fin_aid_info li {
+  padding:.12em;
+  text-align: left;
+}
+
+li .title {
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 img {
@@ -62,6 +66,9 @@ h1 {
   font-size: 2.7em;
   color: white;
 
+}
+h2 {
+  font-size: 1.5em;
 }
 li {
   padding: .5em;
@@ -82,6 +89,9 @@ label {
 #navi_bar li {
   display: inline-block;
   padding: 0em 1.3em;
+}
+#payment_components {
+  text-align: left;
 }
 .option:hover {
   color: white;
@@ -149,7 +159,7 @@ cursor: default;
     padding: .35em 0;
   }
   #navi_bar > .option{
-    display:none;
+    display: none;
   }
 
 }
