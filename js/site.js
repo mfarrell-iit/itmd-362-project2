@@ -2,7 +2,10 @@ var user = {
   firstName: "Justin",
   lastName: "BIEBER",
   username: "JBIEBER",
-  password: "hawk2017"
+  password: "hawk2017",
+  printC: "5.00",
+  t_cost: "21300.00",
+  t_cred: "17250.00",
 };
 $(window).ready(function(e) {
   $("#submit").on("click", function (event) {

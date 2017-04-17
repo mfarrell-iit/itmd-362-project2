@@ -1,22 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MyIIT Payment</title>
+  <title>MyIllioisTech - Finances</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="/css/screen.css" />
+  <link rel="stylesheet" media="screen" href="css/screen.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="nav" id="myiitnav">
-    <a href="/main/main.html">Home</a>
-    <a href="/payment/payment.html">Payment</a>
-    <a href="/index.html">Logout</a>
-  </div>
-  <h1>Welcome to the payment portal!</h1>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="/js/site.js"></script>
-  <footer>
-    Copyright Illinois Institute of Technology 2017
-  </footer>
+  <ul id="page_struct">
+    <li id="header">
+      <h1> Welcome, <span id="person_name">Scarlet Hawk!</span></h1>
+      <ul id="navi_bar">
+         <button id="exp">=</button>
+         <li class="option" id="home"> Home </li>
+         <li class="option inact"> Academics </li>
+         <li class="active" id="finances"> Finances </li>
+         <li class="option inact"> Work </li>
+         <li class="option inact"> Library </li>
+         <li class="option inact"> Help </li>
+      </ul>
+    </li>
+    <li id="body">
+      <ul id="payment_components">
+        <li id="info">
+          <h2> Contact Information </h2>
+          <ul id="fin_aid_info">
+            <li class="title">Main Campus</li>
+            <li>10 W 33rd Street</li>
+            <li>Perlstein Hall, Suite 206</li>
+            <li>Phone:312.567.7219</li>
+            <li>Email: finaid@iit.edu</li>
+            <li> <a href="finaid.iit.edu"> finaid.iit.edu </a></li>
+            <li class="title">Downtown Campus</li>
+            <li>565 West Adams Street, Suite 230</li>
+            <li>Chicago, IL 60661</li>
+            <li>Phone: 312.906.5180</li>
+            <li>Fax: 312.906.5274</li>
+            <li>Email: finaid@kentlaw.edu</li>
+            <li>Email: finaid@stuart.iit.edu</li>
+            <li> <a href="www.kentlaw.edu/depts/finaid"> www.kentlaw.edu/depts/finaid </a></li>
+          </ul>
+        </li>
+        <li id="print">
+          <h2> Printing Account </h2>
+          <ul id="print_det">
+            <li class="title"> Available Balance: <span id="p_credit_area"></span></li>
+            <li><img src="./media/printing.png" alt="printing prices"/> </li>
+          </ul>
+        </li>
+        <li id="acc_bal">
+          <h2> Tuition Details </h2>
+          <li id="amt_due">Outstanding Balance: </li>
+        </li>
+      </ul>
+    </li>
+    <li id="footer">
+      <span>Illinois Institute of Technology</span>
+      <span>10 West 35th Street</span>
+      <span>Chicago, IL 60616</span>
+      <span>312.567.3000</span>
+    </li>
+  </ul>
+  <script src="js/site.js"></script>
+  <script src="js/portal.js"></script>
 </body>
 </html>
