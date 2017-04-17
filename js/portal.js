@@ -9,6 +9,15 @@ function load_login() {
       }
     );
   }
+  $('#tuiton_exp').bind('click', function() {
+    var change;
+    if ($('#detailed-list').css('display') == 'none') {
+       change = 'block';
+    } else {
+      change = 'none';
+    }
+    $('#detailed-list').css('display', change);
+  });
   var amt_due = user.t_cost - user.t_cred;
   $('#tut-amt').html('$'+ (user.t_cost - user.t_cred));
   if (amt_due > 0) {
@@ -18,11 +27,16 @@ function load_login() {
 
   $('#p_now').bind('click', function() {
       if ($('#pay_box').css('display') == 'block') {
-        var act = window.confirm('Proceed with payment?');
-        if (act) {
-          window.location.replace('another.html');
+        if($('#r_num').val().length == 9 && $('#acc_num').val().length == 9 && $('#amt').val().length > 0){
+          var act = window.confirm('Proceed with payment?');
+          if (act) {
+            window.alert("Payment successeful!");
+            window.location.replace('main.html');
+          } else {
+            window.alert("Payment cancelled.");
+          }
         } else {
-          window.alert("Payment cancelled.");
+          window.alert("invalid payment options");
         }
       } else {
         $('#pay_box').css('display', 'block');
