@@ -25,7 +25,7 @@
     <li id="body">
       <ul id="payment_components">
         <li id="info">
-          <h2> Contact Information </h2>
+          <h2> <button id="c_info">+</button> Contact Information </h2>
           <ul id="fin_aid_info">
             <li class="title">Main Campus</li>
             <li>10 W 33rd Street</li>
@@ -43,16 +43,28 @@
             <li> <a href="www.kentlaw.edu/depts/finaid"> www.kentlaw.edu/depts/finaid </a></li>
           </ul>
         </li>
+        <li id="acc_bal">
+          <h2> <button id="tuiton_exp">+</button> Tuition Details </h2>
+          <li id="amt_due">Outstanding Balance: <span id="tut-amt"></span></li>
+          <li>
+            <ul id="detailed-list">
+            </ul>
+          </li>
+          <li>
+            <section id="pay_box">
+              <input type='number' step='1' min='0' placeholder="Routing Number"> </input>
+              <input type='number' step='1' min='0' placeholder="Account Number"> </input>
+              <input type='number' step='1' min='0' placeholder="Amount to Pay"> </input>
+            </section>
+            <button id="p_now">Pay now </button>
+          </li>
+        </li>
         <li id="print">
-          <h2> Printing Account </h2>
+          <h2> <button id="print_acc">+</button> Printing Account </h2>
           <ul id="print_det">
             <li class="title"> Available Balance: <span id="p_credit_area"></span></li>
             <li><img src="./media/printing.png" alt="printing prices"/> </li>
           </ul>
-        </li>
-        <li id="acc_bal">
-          <h2> Tuition Details </h2>
-          <li id="amt_due">Outstanding Balance: </li>
         </li>
       </ul>
     </li>
