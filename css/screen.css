@@ -21,47 +21,50 @@ html {
   padding: 1em, .75em;
   text-align: center
 }
+body {
+  padding: 1em, 1em;
+  margin: 0em;
+}
 #page_struct{
   margin: 0;
   padding: 0;
 }
 #body{
   background-color: white;
-  width:100%;
+  width:97%;
 }
 #header {
+  padding: 0;
+  width: 100%;
   border-bottom: #cc0000 solid .23em;
   line-height: 5em;
-}
-body {
-  padding: 1em, 1em;
-  margin: 0em;
-}
-#body > p {
-  text-align: justify;
-}
-#detailed-list {
-  display: none;
 }
 #footer {
   margin: 0;
   padding: .23em;
+  color: white;
   border-top: #cc0000 solid .23em;
+}
+#footer span {
+  display: block;
+}
+#detailed-list {
+  display: none;
+}
+#body > p {
+  text-align: justify;
 }
 #fin_aid_info li {
   padding:.12em;
   text-align: left;
 }
-
 li .title {
   font-weight: bold;
   font-size: 1.2em;
 }
-
 img {
   max-width: 75%;
 }
-
 ul {
   padding: 2em, 1em;
   width: 100%;
@@ -69,7 +72,6 @@ ul {
 h1 {
   font-size: 2.7em;
   color: white;
-
 }
 h2 {
   font-size: 1.5em;
@@ -77,14 +79,6 @@ h2 {
 li {
   padding: .5em;
 }
-
-div {
-  padding: 1em;
-  font-size: 1.25em;
-  display: block;
-  width: 100%;
-}
-
 label {
   display: inline-block;
   color: #262626;
@@ -97,17 +91,6 @@ label {
 #payment_components {
   text-align: left;
 }
-.option:hover {
-  color: white;
-  background-color: #CC0000;
-
-}
-.active {
-  color: #CC0000;
-}
-.active {
-cursor: default;
-}
 #navi_bar {
   width:100%;
   margin: 0;
@@ -118,32 +101,53 @@ cursor: default;
   background-color: white;
   cursor: pointer;
 }
-input[type='number'] {
-    -moz-appearance:textfield;
-    display: block;
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-input {
-}
-#footer span {
-  display: block;
-}
 h2 > button {
   background-color: white;
   color: #CC0000;
   border: #CC0000 .01em solid;
 }
-h2 > button:hover {
+h2 > button:hover, #info > h2:hover {
   cursor: pointer;
+}
+.option:hover {
+  color: white;
+  background-color: #CC0000;
+}
+.active {
+  color: #CC0000;
+  cursor: default;
 }
 #pay_box {
   display: none;
   padding: .3em;
 }
+/* ---Input Styling--- */
+
+form {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+    display: block;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+  border: solid;
+  padding: .5em;
+}
+
+#email, #name, #zipcode, #submit{
+  margin: 1em;
+  border: solid;
+  text-align: left;
+}
+
 /* ---Media States---*/
 
 /* phone */
@@ -167,66 +171,27 @@ h2 > button:hover {
   }
   #footer {
     padding: .5em;
-    color: white;
   }
   #footer a img {
-    display: inline;
     width: 35%;
-    padding: 1.5em;
   }
-  #footer p {
+  #footer p, #footer a img {
     display: inline;
     padding: 1.5em 0;
   }
   #navi_bar {
     padding: .35em 0;
   }
-  #navi_bar > .option {
-    display: none;
-  }
-  #fin_aid_info *, #print_det  {
+
+  #fin_aid_info *, #print_det, #navi_bar > .option  {
     display: none;
   }
   #body h2 {
     padding: .25em;
   }
-  #info > h2:hover {
-    cursor: pointer;
-  }
-
 }
 
-/* tablet */
-/*@media screen and (min-width: 320px) {
-  html {
-    font-size: 1em;
-  }
-
-  #footer {
-    padding: 1em;
-  }
-}
-*/
-/* ---Input Styling--- */
-
-form {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1em;
-}
-
-input {
-  border: solid;
-  padding: .5em;
-}
-
-
-#email, #name, #zipcode, #submit{
-  margin: 1em;
-  border: solid;
-  text-align: left;
-}
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 650px) {
   body {
     margin: 0em 5em;
     }
@@ -234,7 +199,14 @@ input {
     font-size: 5em;
     }
   label {
+    display: inline-block;
     font-size: 1.3em;
     }
+  #exp {
+    display: none;
+  }
+  #navi_bar > .option {
+    display: inline-block;
+    padding: .5em ;
   }
 }
