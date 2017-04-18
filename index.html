@@ -2,31 +2,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>MyIIT Login</title>
+  <title>MyIllioisTech Login</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="css/screen.css" />
 </head>
 <body>
-   <form id="myiitlogin" method="post" action="javascript:login()">
-    <ul>
-      <li>
-        <label for="user">E-mail</label>
-        <input type="text" name="user" id="user" placeholder="Username" />
-      </li>  
-      <li>  
-        <label for="pass">Name</label>
-        <input type="text" name="pass" id="pass" placeholder="Password" />
-      </li>  
-      <li>  
-        <input type="submit" value="Submit" />
-      </li>
-    </ul>
-  </form>
+  <ul id="page_struct">
+    <li id="header">
+      <h1> Illinois Tech Web Portal </h1>
+    </li>
+    <li id="body">
+      <ul>
+        <li>
+          <label for="user">Username:</label>
+          <input type="text" name="user" id="user" placeholder="Username" />
+        </li>
+        <li>
+          <label for="pass">Password:</label>
+          <input type="password" name="pass" id="pass" placeholder="Password" />
+        </li>
+        <li>
+          <button class="button" id="submit">Login</button>
+        </li>
+      </ul>
+    </li>
+    <li id="footer">
+      <a href="https://ots.iit.edu"><img src="./media/ots.jpg" alt="Need help? Contact OTS!"></a>
+      <p>
+        <span>Illinois Institute of Technology</span>
+        <span>10 West 35th Street</span>
+        <span>Chicago, IL 60616</span>
+        <span>312.567.3000</span>
+      </p>
+    </footer>
+  </ul>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
-  <footer>
-    Copyright Illinois Institute of Technology 2017
-  </footer>
 </body>
 </html>
