@@ -27,7 +27,7 @@ html {
 }
 #body{
   background-color: white;
-  width:100%;
+  width:97%;
 }
 #header {
   border-bottom: #cc0000 solid .23em;
@@ -52,7 +52,10 @@ body {
   padding:.12em;
   text-align: left;
 }
-
+#header {
+  padding: 0;
+  width: 100%;
+}
 li .title {
   font-weight: bold;
   font-size: 1.2em;
@@ -144,6 +147,9 @@ h2 > button:hover {
   display: none;
   padding: .3em;
 }
+#info > h2:hover {
+  cursor: pointer;
+}
 /* ---Media States---*/
 
 /* phone */
@@ -190,23 +196,9 @@ h2 > button:hover {
   #body h2 {
     padding: .25em;
   }
-  #info > h2:hover {
-    cursor: pointer;
-  }
 
 }
 
-/* tablet */
-/*@media screen and (min-width: 320px) {
-  html {
-    font-size: 1em;
-  }
-
-  #footer {
-    padding: 1em;
-  }
-}
-*/
 /* ---Input Styling--- */
 
 form {
@@ -220,13 +212,13 @@ input {
   padding: .5em;
 }
 
-
 #email, #name, #zipcode, #submit{
   margin: 1em;
   border: solid;
   text-align: left;
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 650px) {
   body {
     margin: 0em 5em;
     }
@@ -234,7 +226,14 @@ input {
     font-size: 5em;
     }
   label {
+    display: inline-block;
     font-size: 1.3em;
     }
+  #exp {
+    display: none;
+  }
+  #navi_bar > .option {
+    display: inline-block;
+    padding: .5em ;
   }
 }
